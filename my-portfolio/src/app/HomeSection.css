@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.quotes-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 70px;
+}
+
+.quote-border{
+    border: 1px solid var(--secondaryColor);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.quotes-credit{
+    border: 1px solid var(--secondaryColor);
+    position: absolute;
+    bottom: -25px;
+    right: 266px;
+    padding: 10px;
+}

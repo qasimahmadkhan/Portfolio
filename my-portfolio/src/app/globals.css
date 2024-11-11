@@ -5,17 +5,120 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --purple : #C778DD;
+  --primary: #ffffff;
+  --secondaryColor: #ABB2BF
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    /* --foreground: #ededed; */
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Fira Code',Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+  @apply grid grid-cols-[10%,80%,10%] min-h-screen bg-background;
+}
+
+.left-column {
+  @apply bg-foreground;
+}
+
+.middle-column {
+  @apply bg-background;
+}
+
+.right-column {
+  @apply bg-foreground;
+}
+
+.navbar{
+  @apply flex items-center justify-between w-full px-4 py-2 bg-background
+}
+
+.navbar-brand{
+  @apply text-lg font-bold
+}
+
+.navbar-links{
+  @apply flex space-x-16
+}
+
+.navbar-links li a:hover{
+   color: var(--purple)
+}
+
+.navbar-links a:target {
+  color: var(--primary);
+}
+
+.navbar-links a::before {
+  content: "#";
+  color: var(--purple);
+  padding-right: 2px;
+}
+
+.hero-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.hero-content{
+  margin-top: 5rem;
+}
+
+.hero-title{
+  font-size: 2rem;
+  color: var(--primary);
+  width: 75%;
+}
+
+.highlight{
+  color: var(--purple);
+}
+
+.hero-description{
+  font-size: 1rem;
+  color: var(--secondaryColor);
+  margin-top: 2rem;
+}
+
+.hero-button{
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border: 2px solid var(--purple);
+  border-radius: 0.357rem;
+  transition: border-color 0.3s ease;
+}
+
+.hero-image-wrapper{
+  margin-top: 2rem;
+}
+
+.square{
+  height: 10px;
+  width: 10x;
+  background-color: var(--purple);
+}
+
+.tagline{
+  border: 1px solid var(--secondaryColor);
+  display: flex;
+  align-items: center;
+}
+
+.statusIcon{
+  width: 10px;
+  height: 10px;
+  background-color: var(--purple);
+  margin: 5px;
 }
