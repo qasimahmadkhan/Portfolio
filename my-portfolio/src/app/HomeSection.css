@@ -27,3 +27,62 @@
     right: 266px;
     padding: 10px;
 }
+
+.about-me-section h1::before{
+    content: '#';
+}
+
+.projects-section{
+    padding-top: 10rem;
+}
+.projects-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-cards{
+    display: flex;
+    gap:20px;
+    padding-top: 2rem;
+}
+.project-card{
+    flex:1;
+    border: 1px solid var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-card:hover {
+    transform: scale(1.02);
+}
+.line-separator{
+    border: none;
+    border-top: 1px solid var(--secondaryColor);
+}
+.card-buttons{
+    margin: 10px;
+}
+.project-tags{
+    margin: 5px;
+    color: var(--secondaryColor);
+}
+.card-button {
+    border: 1px solid #C778DD;
+    padding: 5px;
+}
+.project-title{
+    margin: 5px 10px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.project-description{
+    margin: 5px 10px;
+    color: var(--secondaryColor);
+}
+.projects-header h1::before {
+    content: '#';
+    color:  #C778DD;
+}
+.projects-heading{
+    font-size: 3rem;
+}

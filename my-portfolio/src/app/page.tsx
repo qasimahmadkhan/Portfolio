@@ -2,6 +2,7 @@ import './HomeSection.css'
 
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/Navbar";
+import ProjectsSection from './ProjectSection';
 import Quotes from './Quote';
 
 export default function HomePage() {
@@ -10,6 +11,7 @@ export default function HomePage() {
       <NavBar/>
       <HeroSection/>
       <Quotes/>
+      <ProjectsSection/>
     </div>
   );
 }

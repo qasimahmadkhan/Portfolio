@@ -1,4 +1,4 @@
-import './globals.css'; // Ensure you're importing your styles
+import './globals.css';
 
 import React from 'react';
 
