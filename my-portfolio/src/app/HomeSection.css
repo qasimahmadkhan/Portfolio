@@ -131,6 +131,29 @@
     height: 2px; /* Thickness of the line */
     background-color: #a64ac9; /* Use your desired color */
     margin-top: 35px;
-    margin-left: 10px;
-    
+    margin-left: 10px; 
+}
+/* about me section */
+.about-me-layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.about-me-section h1::before{
+    content: '#';
+    color: #C778DD;
+}
+.about-me-heading{
+    font-size: 3rem;
+}
+.about-me-section{
+    margin-top: 10rem;
+}
+.about-me-left{
+    padding: 30px;
+}
+.about-para-margin{
+    margin-top: 30px;
+}
+.about-me-area{
+    display: flex;
 }

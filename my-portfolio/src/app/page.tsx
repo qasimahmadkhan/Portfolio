@@ -1,5 +1,6 @@
 import './HomeSection.css'
 
+import AboutMe from './AboutMe';
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/Navbar";
 import ProjectsSection from './ProjectSection';
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Quotes/>
       <ProjectsSection/>
       <SkillSection/>
+      <AboutMe/>
     </div>
   );
 }
