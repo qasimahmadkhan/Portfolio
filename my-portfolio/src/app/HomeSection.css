@@ -86,3 +86,51 @@
 .projects-heading{
     font-size: 3rem;
 }
+
+/* Skills section */
+.skills-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+.skills-boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-box{
+    flex: 1 1 200px;
+    border: 1px solid var(--secondaryColor);
+    margin: 5px;
+}
+.skill-box-heading{
+    padding: 10px;
+}
+.skill-box-desc{
+    padding: 10px;
+}
+.skills-area{
+    margin-top: 10rem;
+}
+.skills-heading{
+    font-size: 3rem;
+}
+.skills-area h1::before{
+    content: '#';
+    color: #C778DD;
+}
+.skills-heading-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.line-divider {
+    display: inline-block;
+    width: 300px; /* Adjust width as desired */
+    height: 2px; /* Thickness of the line */
+    background-color: #a64ac9; /* Use your desired color */
+    margin-top: 35px;
+    margin-left: 10px;
+    
+}
